@@ -18,7 +18,6 @@ class User {
         this.telefono = telefono;
         this.correo = correo;
         this.contrasena = contrasena;
-
     }
 }
 

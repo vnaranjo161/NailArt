@@ -1,4 +1,3 @@
-import { log } from 'console';
 import db from '../config/config-db';
 import User from '../Dto/UserDto';
 
@@ -11,7 +10,7 @@ class UserRepository {
     }
 
     static async auth(correo: string, contrasena: string){
-        const sql = 'SELECT contrasena FROM usuarios WHERE correo=?';
+        const sql = 'SELECT contrasena FROM usuario WHERE correo=?';
         const values = [correo];
         return db.execute(sql, values)
     }
