@@ -12,6 +12,7 @@ const app = express().use(bodyParser.json());
 app.use('/register', register);
 app.use('/auth', auth);
 
+
 const PORT = process.env.PORT || 10101;
 
 app.listen(PORT, () => {
